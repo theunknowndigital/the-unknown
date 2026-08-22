@@ -62,8 +62,7 @@ button,input,textarea{font:inherit}button{cursor:pointer}.stars{position:fixed;i
 </main>
 
 <div id="modal" class="modal" onclick="if(event.target===this)closeM()"><div id="box" class="box"></div></div><div id="toast" class="toast"></div>
-
-<script>
+ <script>
 const KEY='unknown_universe_complete_v3';
 let S=JSON.parse(localStorage.getItem(KEY)||'null')||{xp:0,rooms:0,secrets:[],eggs:[],chapters:['The Door'],garden:0,pet:false,global:0,art:'',daily:'',maze:0,visited:[],ach:[]};
 const WORLDS=[
@@ -118,3 +117,4 @@ setInterval(()=>{let e=document.getElementById('time');if(e)e.textContent='TIME 
 renderWorlds();ui();
 </script>
 </body></html>
+
